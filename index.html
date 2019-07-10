@@ -6,7 +6,9 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
-
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/fonts.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/vendor/zoomify/css/zoomify.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -18,7 +20,7 @@
                         <img src="http://www.v-kki.co.jp/wp-content/themes/kki.com/img/logo.png" width="150" />
                     </a>
                 </div>
-                <div id="mainMenu">
+                <div id="mainMenu" class="pc">
                     <ul>
                         <li><a href="http://www.v-kki.co.jp/company/">会社概要</a></li>
                         <li><a href="http://www.v-kki.co.jp/factory/">工場設備</a></li>
@@ -28,14 +30,19 @@
                         <li><a href="http://www.v-kki.co.jp/contact/">問い合わせ</a></li>
                     </ul>
                 </div>
+                <div id="menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
             </div>
         </header>
         <section id="banner">
             <div class="container">
                 <div class="banner-content">
-                    <!-- <img src="./assets/images/take-out-tray-bag.png" alt="">
-                    <img src="./assets/images/totb.png" alt="">
-                    <img src="./assets/images/license.png" alt=""> -->
+                    <img src="./assets/images/main-1.jpg" alt="">
                 </div>
             </div>
         </section>
@@ -43,7 +50,7 @@
             <h2 class="title">KKI の <span class="color-1">テイクアウトトレーバッグ</span>なら<span class="tl-2"><span
                         class="color-2">人手不足</span>も怖くない！</span></h2>
             <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/qTnNUy5_FVE?controls=0"
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/qTnNUy5_FVE?controls=0"
                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
@@ -65,23 +72,23 @@
             </div>
         </section>
         <section id="worry">
-            <div class="title">
-                <p>そのお悩み…</p>
+            <div class="container">
+                <div class="title-inner">
+                    <div class="title">
+                        <p>そのお悩み…</p>
+                    </div>
+                </div>
             </div>
             <div class="container">
                 <div class="solve">
-                    <div class="title">
-                        <h2><span class="color-1">テイクアウトトレーバッグ</span>が<span class="tl-2">解決します！</span></h2>
-                    </div>
+                    <h2 class="title"><span class="color-1 tl">テイクアウトトレーバッグ</span><br>が解決します！</h2>
                     <div class="content">
                         <img src="./assets/images/totb_point.png" alt="">
                     </div>
                 </div>
                 <div class="step2">
-                    <div class="title">
-                        <h2>使い方カンタン！
-                            <span>たったの <span class="num-2">2 </span>STEP</span></h2>
-                    </div>
+                    <h2 class="title"><span class="tl">使い方カンタン！</span><br>
+                        たったの <span class="num-2">2 </span>STEP</h2>
                     <div class="content">
                         <img src="./assets/images/totb_use.png" alt="">
                     </div>
@@ -91,24 +98,22 @@
         <section id="review">
             <div class="container">
                 <div class="review-content">
-                    <div class="title">
-                        <h2>実際に使われている<span class="tl-2">お客様の声をご紹介します！</span></h2>
-                    </div>
+                    <h2 class="title">実際に使われている<br><span class="tl">お客様の声</span>をご紹介します！</h2>
                     <div class="content">
                         <div class="title">
                             <p>SKY PROVENCE BAkery&Cafe 様</p>
                         </div>
                         <div class="video">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/qTnNUy5_FVE?controls=0"
+                            <iframe width="640" height="360" src="https://www.youtube.com/embed/qTnNUy5_FVE?controls=0"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
                         </div>
                         <div class="review-picture">
                             <div class="picture">
-                                <img src="./assets/images/kawaba2.jpg" alt="" width="354">
-                                <img src="./assets/images/kawaba3.jpg" alt="" width="354">
-                                <img src="./assets/images/kawaba4.jpg" alt="" width="354">
+                                <img src="./assets/images/kawaba2.jpg" alt="" width="302" height="193">
+                                <img src="./assets/images/kawaba3.jpg" alt="" width="302" height="193">
+                                <img src="./assets/images/kawaba4.jpg" alt="" width="302" height="193">
                             </div>
                             <div class="rev-content">
                                 2017 年春から、群馬県は川場村の田園プラザ川場様ベーカリー店にてご使用いただいております。 「レジ待ちで 30
@@ -138,9 +143,8 @@
         <section id="chart">
             <div class="container">
                 <div class="chart-content">
-                    <div class="title">
-                        <h2><span class="color-1">テイクアウトトレーバッグ</span>を使うことで<span class="tl-2">作業時間を削減！</span></h2>
-                    </div>
+                    <h2 class="title"><span class="color-1">テイクアウトトレーバッグ</span>を使うことで<br><span
+                            class="tl">作業時間を削減！</span></h2>
                     <div class="content">
                         <img src="./assets/images/totb_work.png" alt="">
                     </div>
@@ -160,18 +164,20 @@
                         </div>
                         <div class="contact-tel">
                             <img src="./assets/images/phone.png" />
-                            <span>TEL </span><b><a href="tel:0568281105">0568-28-1105</a>　</b><span>FAX</span><b>
-                                0568-28-6462</b>
+                            <span>TEL </span><a href="tel:0568281105">0568-28-1105</a>　<span>FAX 0568-28-6462</span>
                         </div>
                     </div>
-                    <div class="contact-column">
-                        <a href="http://kki-webshop.com" target="_blank"><img
-                                src="./assets/images/bannercontact.jpg" /></a>
+                    <div class="contact-column right">
+                        <a href="http://kki-webshop.com" target="_blank"><img src="./assets/images/bannercontact.jpg"
+                                width="390" />
+                        </a>
                     </div>
                 </div>
-
             </div>
         </section>
+        <div id="cart">
+            <a href="#"><img src="./assets/images/cart.png" alt=""></a>
+        </div>
         <footer>
             <div class="container">
                 <div id="footer">
@@ -186,13 +192,17 @@
                     <div id="logo_footer">
                         <img src="http://www.v-kki.co.jp/wp-content/themes/kki.com/img/logo-footer.png" width="150">
                     </div>
-
                 </div>
-
             </div>
         </footer>
     </div>
-    <!-- <script src="main.js"></script> -->
+
+    <script src="./assets/js/jquery-3.4.1.min.js"></script>
+    <script src="./assets/vendor/zoomify/js/zoomify.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script>
+        $(".picture img").zoomify();
+    </script>
 </body>
 
 </html>

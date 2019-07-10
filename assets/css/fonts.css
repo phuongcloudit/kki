@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "KozGoPr6N Heavy";
+    src: url("../fonts/KozGoPr6N-Heavy.otf");
+}
+
+@font-face {
+    font-family: "KozGoPr6N Medium";
+    src: url("../fonts/KozGoPr6N-Medium.ttf");
+}
+
+@font-face {
+    font-family: "KozGoPro";
+    src: url("../fonts/KozGoPro-Bold.otf");
+}
+
+@font-face {
+    font-family: "Meiryo";
+    src: url("../fonts/MEIRYO.TTC");
+}
+

@@ -14,7 +14,7 @@ body {
     vertical-align: baseline;
     font-size: 14px;
     line-height: 25px;
-    font-family: 'ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3', 'Hiragino Kaku Gothic Pro', 'ãƒ¡ã‚¤ãƒªã‚ª', Meiryo, 'ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯', sans-serif;
+    font-family: Meiryo;
     font-weight: 400;
     color: #231815;
     -webkit-font-smoothing: antialiased !important;
@@ -51,126 +51,34 @@ img {
     margin: 0 auto;
 }
 
-.title {
+.row {
+    overflow: hidden;
+}
+
+.m-l50 {
+    margin-left: 50px;
+}
+
+.p-t50 {
+    padding-top: 50px
+}
+
+.p-b50 {
+    padding-bottom: 50px
+}
+
+.bg-light {
+    background-color: #efefef;
+}
+
+.page-title {
+    font-size: 24px;
+    letter-spacing: 4px;
     text-align: center;
-    line-height: 1em;
-    display: block;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 50px;
 }
 
-/* ---video-intro--- */
-#video-intro {
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 60px;
-}
-
-#video-intro .title {
-    margin-bottom: 10px;
-}
-
-#video-intro .title span.tl-2 {
-    display: block;
-}
-
-#video-intro .title span.color-1 {
-    color: #66cddd;
-}
-
-#video-intro .title span.color-2 {
-    color: #e73427;
-}
-
-#trouble {
-    background-color: #faf8e7;
-    position: relative;
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-
-#trouble .trouble-content {
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-#trouble .trouble-content .title {
-    background: url(../images/title-bg.png) no-repeat center;
-    background-size: contain;
-    color: #fff;
-    position: absolute;
-    top: -50px;
-    left: 40%;
-    width: 520px;
-    height: 100px;
-    font-size: 36px;
-}
-
-#trouble .trouble-content .content {
-    background: url(../images/note-bg.png) no-repeat center;
-    background-size: cover;
-}
-
-#trouble .trouble-content .content ul {
-    list-style-image: url(../images/style-list.png);
-    list-style-position: inside;
-    line-height: 76px;
-    padding-left: 123px;
-}
-
-#trouble .trouble-content .content ul li {
-    font-size: 30px;
-}
-
-#worry {
-    position: relative;
-    padding-top: 150px;
-}
-
-#worry>.title {
-    background: url(../images/title-bg-2.png) no-repeat;
-    background-size: contain;
-    position: absolute;
-    top: -30px;
-    left: 46%;
-    width: 330px;
-    height: 142px;
-    color: #fff;
-    font-size: 36px;
-}
-
-#worry .solve {
-    padding-bottom: 60px;
-}
-
-#worry .solve .title span.tl-2 {
-    display: block;
-}
-
-#worry .solve .title span.color-1 {
-    color: #66cddd;
-    /* background-color: #fff000; */
-    /* height: 5px; */
-    /* background: url(../images/bg-50.png) no-repeat top; */
-    
-}
-
-#worry .solve .title span.color-2 {
-    color: #e73427;
-}
-
-#worry .solve .content {
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-#worry .step2 .content {
-    padding-left: 80px;
-    padding-right: 80px;
-}
-
-
-
+/* ------------------ header ------------------ */
 
 header {
     padding-left: 20px;
@@ -213,7 +121,11 @@ header {
     text-decoration: none;
     color: #FFF
 }
+@media screen and (max-width: 768px) {
 
+}
+
+/* ------------------ footer ------------------ */
 footer {
     overflow: hidden;
     padding-top: 25px;
@@ -250,62 +162,223 @@ footer .copy_right {
     float: left;
 }
 
-.title_img {
-    background: url(http://www.v-kki.co.jp/wp-content/themes/kki.com/img/title_bg.png) no-repeat center;
+.title {
     text-align: center;
-    width: 190px;
-    margin: 0;
-    padding: 15px 0;
-    color: #FFF;
-    font-weight: normal;
-    letter-spacing: 3px;
-    font-size: 18px;
-    margin-bottom: 30px;
+    line-height: 1.2em;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "HiraginoUDSansStd W6";
 }
 
-.row {
-    overflow: hidden;
+.chart-content .title {
+    font-size: 36px;
+    line-height: 1.2em;
 }
 
-.m-l50 {
-    margin-left: 50px;
+.chart-content .title .tl {
+    font-size: 50px;
+    background: -webkit-linear-gradient(top, rgba(255, 235, 59, 0) 0%, rgba(255, 235, 59, 0) 59%, #ffffff 50%, #FFEB3B 0%);
 }
 
-.p-t50 {
-    padding-top: 50px
+.review-content .title {
+    font-size: 50px;
 }
 
-.p-b50 {
-    padding-bottom: 50px
+.review-content .content .title {
+    font-size: 36px;
+    font-family: "KozGoPr6N Heavy";
 }
 
-.bg-light {
-    background-color: #efefef;
+.review-content .title .tl {
+    background: -webkit-linear-gradient(top, rgba(255, 235, 59, 0) 0%, rgba(255, 235, 59, 0) 59%, #ffffff 50%, #FFEB3B 0%);
 }
 
-.page-title {
-    font-size: 24px;
-    letter-spacing: 4px;
+.step2 .title {
+    font-size: 50px;
+}
+
+.step2 .title .tl {
+    font-size: 36px;
+    background: -webkit-linear-gradient(top, rgba(255, 235, 59, 0) 0%, rgba(255, 235, 59, 0) 59%, #ffffff 50%, #FFEB3B 0%);
+}
+
+/* ------------------ video-intro ------------------ */
+#video-intro {
     text-align: center;
-    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 110px;
 }
+
+#video-intro .title {
+    margin-bottom: 10px;
+    font-size: 36px;
+    line-height: 1.2em;
+}
+
+#video-intro .video {
+    margin-top: 20px;
+}
+
+#video-intro .title span.tl-2 {
+    display: block;
+    font-size: 45px;
+}
+
+#video-intro .title span.color-1 {
+    color: #66cddd;
+}
+
+#video-intro .title span.color-2 {
+    color: #e73427;
+}
+
+/* ------------------ trouble ------------------ */
+
+#trouble {
+    background-color: #faf8e7;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#trouble .trouble-content {
+    position: relative;
+    padding-left: 90px;
+    padding-right: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+#trouble .trouble-content .title {
+    background: url(../images/title-bg.png) no-repeat center;
+    background-size: contain;
+    color: #fff;
+    position: absolute;
+    top: -125px;
+    width: 520px;
+    height: 100px;
+    font-size: 36px;
+}
+
+#trouble .trouble-content .content {
+    background: url(../images/note-bg.png) no-repeat center;
+    background-size: contain;
+    position: relative;
+    width: 100%;
+}
+
+#trouble .trouble-content .content::before {
+    content: url(../images/check.png);
+    position: absolute;
+    top: -30px;
+    left: 5px;
+}
+
+#trouble .trouble-content .content ul {
+    line-height: 76px;
+    padding-left: 170px;
+    list-style: none;
+}
+
+#trouble .trouble-content .content ul li {
+    font-size: 30px;
+    position: relative;
+}
+
+#trouble .trouble-content .content ul li::before {
+    content: url(../images/style-list.png);
+    position: absolute;
+    top: 5px;
+    left: -60px;
+}
+
+#worry {
+    padding-top: 150px;
+    padding-bottom: 90px;
+}
+
+#worry .container .title-inner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#worry .container .title-inner>.title {
+    background: url(../images/title-bg-2.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -180px;
+    width: 330px;
+    height: 142px;
+    color: #fff;
+    font-size: 36px;
+}
+
+#worry .solve {
+    padding-bottom: 60px;
+}
+
+.solve .title {
+    font-size: 50px;
+}
+
+#worry .solve .title .color-1 {
+    color: #66cddd;
+    background: -webkit-linear-gradient(top, rgba(255, 235, 59, 0) 0%, rgba(255, 235, 59, 0) 59%, #ffffff 50%, #FFEB3B 0%);
+    position: relative;
+}
+
+#worry .solve .title .color-1::before {
+    content: url(../images/top-text.png);
+    position: absolute;
+    bottom: 10px;
+    left: -53px;
+}
+
+#worry .solve .title span.color-2 {
+    color: #e73427;
+}
+
+#worry .solve .content {
+    padding-left: 122px;
+    padding-right: 122px;
+    margin-top: 60px;
+}
+
+#worry .step2 {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#worry .step2 .content {
+    margin-top: 40px;
+}
+
+/* ------------------ contact ------------------ */
 
 #contact {
     text-align: center;
     display: table;
     width: 100%;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .contact-content {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: "Meiryo";
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .box-contact {
-    /* width: 270px; */
     margin: 0 auto;
+}
+
+.box-contact>p {
+    font-size: 16px;
 }
 
 .box-contact a.btn-contact {
@@ -330,12 +403,9 @@ footer .copy_right {
 }
 
 .contact-tel {
-    /* padding-top: 30px; */
-    padding-bottom: 20px;
-    /* width:460px; */
+    padding-top: 10px;
     margin: 0 auto;
-    letter-spacing
-    : 1px;
+    letter-spacing: 1px;
     text-align: center;
 }
 
@@ -343,119 +413,106 @@ footer .copy_right {
     vertical-align: sub;
 }
 
-.contact-tel span {
-    font-size: 11px;
-    vertical-align: text-bottom;
-}
-
 .contact-tel b {
-    font-size: 20px;
+    font-size: 14px;
 }
 
-.contact-column {
-    float: left;
-    width: 50%;
+.contact-column.right {
+    padding-top: 20px;
 }
 
-.contact-column.left {
-    width: 45%;
-    padding-right: 5%;
-    padding-top: 2%;
-}
+/* ------------------ review ------------------ */
 
-/* --- banner --- */
-
-#banner {
-    background: url(../images/main-1.jpg) no-repeat center;
-    /* background-size: cover; */
-    height: 187px;
-    /* text-align: center; */
-    /* background-image: repeating-linear-gradient(-45deg, transparent, transparent 10px, #dbfcf8 0px, #fff 31px); */
-    /* background-color: #70dae5; */
-}
-
-/* -- review -- */
-
-#review .container{
-    /* position: relative; */
+.review-content {
+    padding: 60px;
     background-image: repeating-linear-gradient(-40deg, transparent, transparent 25px, #fff 0px, #fff 80px);
     background-color: #d0eef2;
     border: 1px solid #84d4dc;
-    padding: 50px;
 }
-.review-content .content{
-    /* text-align: center; */
+
+.review-content .content {
     background-color: #FFF;
-    padding: 50px 15px; 
-    /* background-image: repeating-radial-gradient() */
+    padding: 50px 30px;
     position: relative;
+    margin-top: 85px;
 }
-.review-content .content::before{
+
+.review-content .content::before {
     content: url(../images/note-wall.png);
     position: absolute;
     top: -40px;
     left: 40%
 }
-.review-content .content .video{
+
+.review-content .content .video {
     text-align: center;
 }
-.review-content .title{
+
+.review-content .title {
     text-align: unset;
 }
-.review-content .title h2 span{
+
+.review-content .title h2 span {
     display: block;
 }
-.review-picture img{
+
+.review-picture img {
     float: left;
 }
-.review-picture .picture{
+
+.review-picture .picture {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 30px;
 }
-.review-picture .rev-content{
+
+.review-picture .rev-content {
     font-size: 18px;
+    line-height: 34px;
+    font-family: "KozGoPr6N Medium";
 }
-#review .container::after{
-    /* content: '';
-    display: block;
-    width: 100%;
-    height: 500px;
-    position: absolute;
-    /* top: 0; */
-    /* left: 0; */
+
+#review .container::after {
     z-index: 0;
     background-color: #d0eef2;
     background-image: repeating-linear-gradient(-40deg, transparent, transparent 18px, #fff 0px, #fff 50px);
-    /* border-bottom: none; */
-    /* max-height: 500px; */
 }
-#more{
-    padding-top: 50px;
-    padding-bottom: 50px;
+
+/* ------------------ div more ------------------ */
+
+#more {
+    padding-top: 30px;
+    padding-bottom: 40px;
 }
-#more .more-content> div{
+
+#more .more-content>div {
     background: url(../images/more.png) no-repeat center;
     height: 87px;
     width: 87px;
     background-size: contain;
 }
-#more .more-content> div:not(:last-child){
+
+#more .more-content>div:not(:last-child) {
     margin-right: 15px;
 }
-#more .more-content> div p{
+
+#more .more-content>div p {
     margin: 0;
     line-height: 85px;
     padding-left: 16px;
 }
-.more-content{
+
+.more-content {
     display: flex;
     justify-content: center;
     font-size: 60px;
 }
-/* chart */
 
+/* ------------------ chart ------------------ */
+.chart-content .content {
+    margin-top: 40px;
+}
 
 .chart-content .title {
     margin-bottom: 10px;
@@ -467,5 +524,69 @@ footer .copy_right {
 
 .chart-content .title span.color-1 {
     color: #66cddd;
+}
+
+.num-2 {
+    font-family: "KozGoPr6N Medium";
+    color: #64c9d4;
+    font-size: 100px;
+}
+
+#cart {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    cursor: pointer;
+}
+
+
+/* -- reponsive -- */
+@media screen and (max-width: 768px) {
+    .pc{
+        display: none;
+    }
+    header #menu {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+    #menu span {
+        width: 30px;
+        height: 2px;
+        background-color: #242F48;
+        display: block;
+        transition: .2s transform;
+    }
+    #menu span ~ span {
+        margin-top: 6px;
+    }
+    header{
+        position: relative;
+    }
+    #mainMenu{
+     right: 0;
+    display: block;
+    position: fixed;
+    height: 100%;
+    background: #242F48;
+    top: 0;
+    width: 188px;
+    right: -188px;
+    padding-top: 80px;
+    box-sizing: border-box;
+    transition: .2s right;
+    }
+    #mainMenu ul{
+            display: block;
+    }
+    #mainMenu ul li a {
+        color: #FFF;
+        text-align: center;
+        display: block;
+        font-size: 18px;
+    }
 }
 
