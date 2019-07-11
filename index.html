@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/fonts.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/vendor/zoomify/css/zoomify.css">
@@ -14,13 +14,13 @@
 <body>
     <div class="wrapper">
         <header>
-            <div class="container">
+            <div class="container clearfix">
                 <div id="logo">
                     <a href="http://www.v-kki.co.jp">
                         <img src="http://www.v-kki.co.jp/wp-content/themes/kki.com/img/logo.png" width="150" />
                     </a>
                 </div>
-                <div id="mainMenu" class="pc">
+                <div id="mainMenu">
                     <ul>
                         <li><a href="http://www.v-kki.co.jp/company/">会社概要</a></li>
                         <li><a href="http://www.v-kki.co.jp/factory/">工場設備</a></li>
@@ -39,10 +39,11 @@
                 
             </div>
         </header>
-        <section id="banner">
+        <section id="main">
             <div class="container">
-                <div class="banner-content">
-                    <img src="./assets/images/main-1.jpg" alt="">
+                <div class="main-img">
+                    <img class="pc" src="./assets/images/main-1.jpg" alt="">
+                    <img class="sp" src="./assets/images/sp/main-1.jpg" alt="">
                 </div>
             </div>
         </section>
@@ -50,7 +51,7 @@
             <h2 class="title">KKI の <span class="color-1">テイクアウトトレーバッグ</span>なら<span class="tl-2"><span
                         class="color-2">人手不足</span>も怖くない！</span></h2>
             <div class="video">
-                <iframe width="640" height="360" src="https://www.youtube.com/embed/qTnNUy5_FVE?controls=0"
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/qTnNUy5_FVE?controls=0"
                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
@@ -81,14 +82,14 @@
             </div>
             <div class="container">
                 <div class="solve">
-                    <h2 class="title"><span class="color-1 tl">テイクアウトトレーバッグ</span><br>が解決します！</h2>
+                    <h2 class="title"><span class="color-1 tl">テイクアウトトレーバッグ</span>が<br>解決します！</h2>
                     <div class="content">
                         <img src="./assets/images/totb_point.png" alt="">
                     </div>
                 </div>
                 <div class="step2">
                     <h2 class="title"><span class="tl">使い方カンタン！</span><br>
-                        たったの <span class="num-2">2 </span>STEP</h2>
+                        たったの<span class="num-2">2</span>STEP</h2>
                     <div class="content">
                         <img src="./assets/images/totb_use.png" alt="">
                     </div>
@@ -104,16 +105,16 @@
                             <p>SKY PROVENCE BAkery&Cafe 様</p>
                         </div>
                         <div class="video">
-                            <iframe width="640" height="360" src="https://www.youtube.com/embed/qTnNUy5_FVE?controls=0"
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/qTnNUy5_FVE?controls=0"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
                         </div>
                         <div class="review-picture">
                             <div class="picture">
-                                <img src="./assets/images/kawaba2.jpg" alt="" width="302" height="193">
-                                <img src="./assets/images/kawaba3.jpg" alt="" width="302" height="193">
-                                <img src="./assets/images/kawaba4.jpg" alt="" width="302" height="193">
+                                <img src="./assets/images/kawaba2.jpg" alt="">
+                                <img src="./assets/images/kawaba3.jpg" alt="">
+                                <img src="./assets/images/kawaba4.jpg" alt="">
                             </div>
                             <div class="rev-content">
                                 2017 年春から、群馬県は川場村の田園プラザ川場様ベーカリー店にてご使用いただいております。 「レジ待ちで 30
@@ -146,7 +147,8 @@
                     <h2 class="title"><span class="color-1">テイクアウトトレーバッグ</span>を使うことで<br><span
                             class="tl">作業時間を削減！</span></h2>
                     <div class="content">
-                        <img src="./assets/images/totb_work.png" alt="">
+                        <img class="pc" src="./assets/images/totb_work.png" alt="">
+                        <img class="sp" src="./assets/images/sp/totb_work.png" alt="">
                     </div>
                 </div>
             </div>
@@ -199,7 +201,10 @@
 
     <script src="./assets/js/jquery-3.4.1.min.js"></script>
     <script src="./assets/vendor/zoomify/js/zoomify.min.js"></script>
+    <script src="http://projecthtml.tokyo/medica/hardy/assets/vendor/swiper/js/swiper.min.js"></script>
+    <script src="http://projecthtml.tokyo/medica/hardy/assets/js/TweenMax.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    
     <script>
         $(".picture img").zoomify();
     </script>

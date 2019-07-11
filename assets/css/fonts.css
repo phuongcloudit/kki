@@ -18,3 +18,13 @@
     src: url("../fonts/MEIRYO.TTC");
 }
 
+@font-face {
+    font-family: "KoburinaGoStd W6";
+    src: url("../fonts/KoburinaGoStd-W6.otf");
+}
+
+@font-face {
+    font-family: "HiraginoUDSansStd W6";
+    src: url("../fonts/HiraginoUDSansStd-W6.otf");
+}
+
