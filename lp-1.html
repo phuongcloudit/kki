@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/fonts.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/vendor/zoomify/css/zoomify.css">
+    <link href="./assets/vendor/zoom-vanilla/css/zoom.css" rel="stylesheet">
 </head>
 
 <body>
@@ -47,8 +47,9 @@
             </div>
         </section>
         <section id="video-intro">
-            <h2 class="title">KKI の <span class="color-1">テイクアウトトレーバッグ</span>なら<span class="tl-2"><span
-                        class="color-2">人手不足</span>も怖くない！</span></h2>
+            <h2 class="title">KKI の <span class="color-1">テイクアウト<br class="sp-t" />トレーバッグ</span>なら<span
+                    class="tl-2"><span class="color-2">人手不足</span>も怖くない！</span>
+            </h2>
             <div class="video">
                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/qTnNUy5_FVE?controls=0"
                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -82,7 +83,7 @@
             </div>
             <div class="container">
                 <div class="solve">
-                    <h2 class="title"><span class="color-1 tl-1">テイクアウトトレーバッグ</span>が<br>解決します！</h2>
+                    <h2 class="title"><span class="color-1 tl-1">テイクアウト<br class="sp-t" />トレーバッグ</span>が<br>解決します！</h2>
                     <div class="content">
                         <!-- <div class="totb-points">
                             <img src="./assets/images/totb_point-1.jpg">
@@ -135,11 +136,12 @@
                                 allowfullscreen></iframe>
                         </div>
                         <div class="review-picture">
-                            <div class="picture clearfix">
-                                <img src="./assets/images/kawaba2.jpg" alt="">
-                                <img src="./assets/images/kawaba3.jpg" alt="">
-                                <img src="./assets/images/kawaba4.jpg" alt="">
+                            <div class="picture">
+                                <img src="./assets/images/kawaba2.jpg" alt="" data-action="zoom">
+                                <img src="./assets/images/kawaba3.jpg" alt="" data-action="zoom">
+                                <img src="./assets/images/kawaba4.jpg" alt="" data-action="zoom">
                             </div>
+                            <div class="clearfix"></div>
                             <div class="rev-content">
                                 2017 年春から、群馬県は川場村の田園プラザ川場様ベーカリー店にてご使用いただいております。 「レジ待ちで 30
                                 分以上並ぶお客様の姿を見るのが心苦しい」というスタッフの方々の思いに応えるべく、 1 年以上の歳月をかけて
@@ -168,7 +170,7 @@
         <section id="chart">
             <div class="container">
                 <div class="chart-content">
-                    <h2 class="title"><span class="color-1">テイクアウトトレーバッグ</span>を使うことで<br><span
+                    <h2 class="title"><span class="color-1">テイクアウトトレーバッグ</span>を<br class="sp-t" />使うことで<br><span
                             class="tl">作業時間を削減！</span></h2>
                     <div class="content">
                         <img class="pc" src="./assets/images/totb_work.png" alt="">
@@ -183,7 +185,7 @@
                     <div class="contact-column left">
                         <div class="box-contact">
                             <p>まずはお気軽にお問い合わせください。</p>
-                            <a class="btn-contact" href="http://www.v-kki.co.jp/contact">
+                            <a onclick="myFunction()" class="btn-contact" href="./request-form.html">
                                 <span>お問い合わせ</span>
                                 <img src="./assets/images/mail.png" />
                             </a>
@@ -222,14 +224,9 @@
             </div>
         </footer>
     </div>
-
     <script src="./assets/js/jquery-3.4.1.min.js"></script>
-    <script src="./assets/vendor/zoomify/js/zoomify.min.js"></script>
+    <script src="./assets/vendor/zoom-vanilla/js/zoom-vanilla.js"></script>
     <script src="./assets/js/script.js"></script>
-
-    <script>
-        $(".picture img").zoomify();
-    </script>
 </body>
 
 </html>
