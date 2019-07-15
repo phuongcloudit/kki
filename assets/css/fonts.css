@@ -17,6 +17,10 @@
     font-family: "Meiryo";
     src: url("../fonts/MEIRYO.TTC");
 }
+/* @font-face {
+    font-family: "Meiryo Bold";
+    src: url("../fonts/MEIRYOB.TTC");
+} */
 
 @font-face {
     font-family: "KoburinaGoStd W6";
@@ -27,4 +31,3 @@
     font-family: "HiraginoUDSansStd W6";
     src: url("../fonts/HiraginoUDSansStd-W6.otf");
 }
-

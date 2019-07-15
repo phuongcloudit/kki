@@ -27,7 +27,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 img {
@@ -47,26 +47,6 @@ img {
     margin: 0 auto;
 }
 
-.row {
-    overflow: hidden;
-}
-
-.m-l50 {
-    margin-left: 50px;
-}
-
-.p-t50 {
-    padding-top: 50px
-}
-
-.p-b50 {
-    padding-bottom: 50px
-}
-
-.bg-light {
-    background-color: #efefef;
-}
-
 .page-title {
     font-size: 24px;
     letter-spacing: 4px;
@@ -79,9 +59,11 @@ img {
     clear: both;
     display: table;
 }
+
 .red {
     color: #d73030;
 }
+
 .sp {
     display: none !important;
 }
@@ -286,6 +268,7 @@ footer .copy_right {
 
 #trouble .trouble-content .content {
     background: url(../images/note-bg.png) no-repeat left;
+    /* background: url(../images/note-bg.png) left center repeat-x, url(../images/note-bg.png) right center no-repeat; */
     background-size: cover;
     position: relative;
     width: 100%;
@@ -309,7 +292,7 @@ footer .copy_right {
 
 #trouble .trouble-content .content ul {
     margin: 0;
-    line-height: 76px;
+    line-height: 3em;
     padding-left: 19%;
     list-style: none;
 }
@@ -318,6 +301,8 @@ footer .copy_right {
     font-size: 30px;
     position: relative;
     font-family: "HiraginoUDSansStd W6";
+    padding-top: 10px;
+    padding-bottom: 23px;
 }
 
 #trouble .trouble-content .content ul li::before {
@@ -357,13 +342,18 @@ footer .copy_right {
 
     #trouble .trouble-content .content ul {
         padding-left: 30px !important;
-        line-height: 3.6em;
+        line-height: 1.6em;
         padding-right: 30px;
-
+        padding-top: 10px;
     }
 
     #trouble .trouble-content .content ul li {
         font-size: unset;
+        font-size: 14px;
+        border-bottom: 2px dotted;
+        padding-left: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 
     #trouble .trouble-content .title {
@@ -373,12 +363,6 @@ footer .copy_right {
 
     #trouble {
         padding: 50px 0 !important;
-    }
-
-    #trouble .trouble-content .content ul li {
-        font-size: 14px;
-        border-bottom: 2px dotted;
-        padding-left: 30px;
     }
 
     #trouble .trouble-content .content::before {
@@ -790,6 +774,13 @@ footer .copy_right {
         height: 40px;
         top: -24px;
     }
+    .review-picture img{
+        float: none;
+        width: 100%;
+    }
+    .review-picture .picture{
+        display: block;
+    }
 }
 
 /* ------------------ div more ------------------ */
@@ -1083,11 +1074,12 @@ footer .copy_right {
     font-family: "Meiryo";
     margin-left: 92px;
     margin-right: 92px;
-    border-top: 1px solid #234B81;
-    border-bottom: 1px solid #234B81;
+    border-top: 1px solid #3a302e;
+    border-bottom: 1px solid #3a302e;
 
 }
-.form-content table{
+
+.form-content table {
     width: 100%;
 }
 
@@ -1096,9 +1088,10 @@ footer .copy_right {
     width: 35%;
     background-color: #17469e;
     color: #fff;
-    font-weight: normal;
+    /* font-weight: normal; */
     margin-left: 20px;
     padding: 18px 0px 18px 20px;
+    letter-spacing: 0.1em;
 }
 
 .form-content table td {
@@ -1123,7 +1116,7 @@ footer .copy_right {
 
 .form-content table tr th,
 .form-content table tr td {
-   
+
     line-height: 2em;
 }
 
@@ -1147,12 +1140,14 @@ textarea.request {
     margin-bottom: 12px;
     margin-top: 12px;
 }
-textarea.shipping-add{
+
+textarea.shipping-add {
     resize: vertical;
     margin-bottom: 12px;
     margin-top: 12px;
     line-height: 1.5em;
 }
+
 #request-content .form-content .radio-group label:before {
     content: '';
     display: block;
@@ -1171,64 +1166,78 @@ textarea.shipping-add{
     transition: all 0.1s;
     cursor: pointer;
 }
-#request-content .form-content .radio-group input[type="radio"]:checked + label:before {
+
+#request-content .form-content .radio-group input[type="radio"]:checked+label:before {
     background: #242F48;
 }
-#request-content .form-content .radio-group input[type="radio"]{
+
+#request-content .form-content .radio-group input[type="radio"] {
     display: none;
 }
+
 #request-content .form-content .radio-group label {
     margin-right: 10px;
     padding-left: 30px;
     display: inline-block;
     position: relative;
-    line-height: 1em;
+    line-height: 1.2em;
     cursor: pointer;
 }
-.request-note{
+
+.request-note {
     margin-top: 200px;
     text-align: center;
 }
+
 .request-note-content {
-    width: 590px;
+    width: 586px;
     border: 2px solid #b7b4b3;
     display: inline-block;
 }
-.request-note-content p{
-    padding: 15px 22px;;
+
+.request-note-content p {
+    padding: 15px 22px;
     margin: 0;
     text-align: justify;
+    letter-spacing: 0.06em;
 }
-.btn:hover, .btn.btn-primary{
+
+.btn:hover,
+.btn.btn-primary {
     background-color: #2f59a8;
     color: #FFF;
 }
+
 .btn {
     margin-left: 20px;
     margin-right: 20px;
-    padding: 16px 67px;
+    padding: 20px 77px;
     display: inline-block;
     line-height: 1em;
-    font-size: 14px;
+    font-size: 24px;
+    letter-spacing: 0.2em;
     border: none;
     background: none;
-    font-weight: bold;
+    /* font-weight: bold; */
     /* font-family: "Yu Gothic Bold"; */
-    border: 1px solid #242F48;
+    /* border: 1px solid #242F48; */
     color: #242F48;
     transition: .5s all;
     cursor: pointer;
 }
-.form-action{
+
+.form-action {
     padding-top: 40px;
     text-align: center;
     font-size: 24px;
 }
-.inquiry-by-phone{
+
+.inquiry-by-phone {
     margin-top: 80px;
     margin-bottom: 80px;
 }
-.inquiry-by-phone h2{
+
+.inquiry-by-phone h2 {
     text-align: center;
     font-size: 24px;
     padding: 10px 0;
@@ -1237,42 +1246,128 @@ textarea.shipping-add{
     font-weight: normal;
     letter-spacing: 3px;
     font-family: unset;
+    letter-spacing: 0.3em;
 }
+
 .inquiry-content {
-text-align: center;
-margin-top: 80px;
-display: flex;
-justify-content: center;
+    text-align: center;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
 }
-.inquiry-content .inquiry-column{
+
+.inquiry-content .inquiry-column {
     /* width: 50%; */
     display: inline-block;
-    padding: 10px;
+    padding: 0 10px;
 }
-.inquiry-content .inquiry-column.left{
+
+.inquiry-content .inquiry-column.left {
     float: left;
-    border-right: 1px solid #342a27;
+    border-right: 2px solid #a29d9c;
     position: relative;
     font-size: 30px;
+    letter-spacing: 0.1em;
 }
-.inquiry-content .inquiry-column.left span{
+
+.inquiry-column.left {
+    display: flex;
+    align-items: center;
+}
+
+.inquiry-column.left .icon-phone {
+    padding-right: 10px;
+}
+
+.tel-fax>div {
+    display: flex;
+    align-items: center;
+}
+
+.tel-fax>div span {
+    padding-right: 10px;
+}
+
+.inquiry-content .inquiry-column.left span {
     font-size: 12px;
     text-align: right;
     line-height: 46px;
 }
-.inquiry-content .inquiry-column.right{
+
+.inquiry-content .inquiry-column.right {
     float: right;
     font-size: 16px;
     line-height: 30px;
     text-align: left;
+    letter-spacing: 0.1em;
+    display: flex;
+    align-items: center;
 }
-.inquiry-column.left::before{
-    content: "";
-    background-image: url(../images/phone-large.png);
-    background-repeat: no-repeat;
-    height: 50px;
-    width: 81px;
-    top: 28px;
-    left: -67px;
-    position: absolute;
+
+@media screen and (max-width: 768px) {
+    .request-note-content {
+        width: 100%;
+    }
+
+    .request-form {
+        padding: 40px 0;
+        margin: 0;
+    }
+
+    .page-heading-content {
+        margin: 0;
+    }
+
+    .request-page-heading .title {
+        font-size: 20px;
+    }
+
+    .request-form {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+
+    .form-action {
+        font-size: 14px;
+    }
+
+    .inquiry-by-phone h2 {
+        font-size: 14px;
+        background-size: contain;
+    }
+
+    .inquiry-content .inquiry-column.right {
+        font-size: 14px;
+
+    }
+
+    .inquiry-content .inquiry-column.left {
+        font-size: 24px;
+        display: block;
+    }
+
+    .page-heading-content {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    .form-notice {
+        margin-bottom: 40px;
+    }
+
+    .request-note {
+        margin-top: 100px;
+    }
+
+    .inquiry-by-phone {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .inquiry-content {
+        margin-top: 40px;
+    }
 }
