@@ -166,6 +166,19 @@ footer .copy_right {
     margin-top: 28px;
     float: left;
 }
+@media screen and (max-width: 768px) {
+    footer .copy_right{
+        float: none;
+        text-align: center;
+        margin-top: 0;
+    }
+    #info_footer{
+        float: none;
+    }
+    #logo_footer{
+        padding-right: 0;
+    }
+}
 
 .title {
     text-align: center;
@@ -175,8 +188,6 @@ footer .copy_right {
     margin-bottom: 0;
     font-family: "HiraginoUDSansStd W6";
 }
-
-
 
 #main {
     padding-top: 20px;
@@ -1137,6 +1148,7 @@ textarea {
     border: 1px solid #F5F5F5;
     outline: none;
     display: block;
+    font-family: "Meiryo";
 }
 
 textarea.request {
@@ -1152,6 +1164,7 @@ textarea.shipping-add {
     margin-bottom: 12px;
     margin-top: 12px;
     line-height: 1.5em;
+    height: 47px;
 }
 
 #request-content .form-content .radio-group label:before {
@@ -1241,9 +1254,6 @@ textarea.shipping-add {
     letter-spacing: 0.2em;
     border: none;
     background: none;
-    /* font-weight: bold; */
-    /* font-family: "Yu Gothic Bold"; */
-    /* border: 1px solid #242F48; */
     color: #242F48;
     transition: .5s all;
     cursor: pointer;
@@ -1273,33 +1283,29 @@ textarea.shipping-add {
 }
 
 .inquiry-content {
-    text-align: center;
     margin-top: 80px;
-    display: flex;
-    justify-content: center;
 }
 
 .inquiry-content .inquiry-column {
-    /* width: 50%; */
-    display: inline-block;
     padding: 0 10px;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
 }
 
 .inquiry-content .inquiry-column.left {
-    float: left;
-    border-right: 2px solid #a29d9c;
-    position: relative;
+    text-align: right;
+    box-shadow: inset -2px 0 0 #a29d9c;
     font-size: 30px;
     letter-spacing: 0.1em;
 }
 
-.inquiry-column.left {
-    display: flex;
-    align-items: center;
-}
-
 .inquiry-column.left .icon-phone {
     padding-right: 10px;
+}
+
+.tel-fax {
+    display: inline-block;
 }
 
 .tel-fax>div {
@@ -1318,13 +1324,9 @@ textarea.shipping-add {
 }
 
 .inquiry-content .inquiry-column.right {
-    float: right;
     font-size: 16px;
     line-height: 30px;
-    text-align: left;
     letter-spacing: 0.1em;
-    display: flex;
-    align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -1366,14 +1368,34 @@ textarea.shipping-add {
         background-size: contain;
     }
 
+    .inquiry-content {
+        margin-top: 40px;
+        display: block;
+        text-align: center;
+    }
+
+    .inquiry-column {
+        width: 100% !important;
+    }
+
     .inquiry-content .inquiry-column.right {
         font-size: 14px;
-
     }
 
     .inquiry-content .inquiry-column.left {
         font-size: 24px;
-        display: block;
+        text-align: center;
+        box-shadow: none;
+        padding-bottom: 20px;
+    }
+
+    .inquiry-content .inquiry-column.left img {
+        width: 40px;
+        vertical-align: super;
+    }
+
+    .inquiry-content .inquiry-column.left span {
+        line-height: 40px;
     }
 
     .page-heading-content {
@@ -1392,10 +1414,6 @@ textarea.shipping-add {
     .inquiry-by-phone {
         margin-top: 40px;
         margin-bottom: 40px;
-    }
-
-    .inquiry-content {
-        margin-top: 40px;
     }
 }
 

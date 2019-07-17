@@ -1,9 +1,12 @@
 <?php 
     require_once dirname( __FILE__ ) . '/include/functions.php'; 
     $page_name = "request-form";
-    $admin_email = "murase@icon-corp.jp";
+    $admin_email_1 = "taizo_shinoda@v-kki.co.jp";
+    $admin_email_2 = "shin_takahara@v-kki.co.jp";
+    $admin_email_3 = "tomonori_nishiguchi@v-kki.co.jp";
+    $admin_email_4 = "masashi_ogura@v-kki.co.jp";
     $from_name = "KKI";
-    $from_email = "no-reply@hardy.jp";
+    $from_email = "no-reply@v-kki.co.jp";
 
 $confirm = false;
 if($_SERVER['REQUEST_METHOD']==="POST"):
@@ -19,27 +22,31 @@ if($_SERVER['REQUEST_METHOD']==="POST"):
             "content"	=>	"内容",
         );
         $requireds = array("name","furigana","company_name","position","address","phone","email","document");
+        $all_fields = array("name","furigana","company_name","position","address","phone","email","document","content");
         $confirm = true;
         foreach ($requireds as $key => $required):
-            if(!field($required)): $confirm = false; break; endif;
+            if(form_error($required)): $confirm = false; break; endif;
         endforeach;
         if($confirm==true && field("send_mail")==="send"):
 
-            $subject = "【ハーディー】お客様よりお問い合わせがありました。";
+            $subject = "【株式会社KKI】お客様よりお問い合わせがありました。";
             $body 	=	email_template("contact_admin.txt");
-            foreach ($requireds as $field) $body  =  compile($body,$field,post_field($field));
+            foreach ($all_fields as $field) $body  =  compile($body,$field,post_field($field));
 
             $email = new PHPMailer();
             $email->CharSet 		=	'UTF-8';
             $email->SetFrom($from_email, $from_name);
             $email->Subject   = $subject;
             $email->Body      = $body;
-            $email->AddAddress( $admin_email);
+            $email->AddAddress( $admin_email_1);
+            $email->AddAddress( $admin_email_2);
+            $email->AddAddress( $admin_email_3);
+            $email->AddAddress( $admin_email_4);
 
             if($email->send()):
-                $subject = "【ハーディー】お問い合わせありがとうございました。";
-                $body 	=	email_template("contact_admin.txt");
-                foreach ($requireds as $field) $body  =  compile($body,$field,post_field($field));
+                $subject = "【株式会社KKI】お客様よりお問い合わせがありました。";
+                $body 	=	email_template("contact_customer.txt");
+                foreach ($all_fields as $field) $body  =  compile($body,$field,post_field($field));
 
                 $email = new PHPMailer();
                 $email->CharSet 		=	'UTF-8';
@@ -49,7 +56,6 @@ if($_SERVER['REQUEST_METHOD']==="POST"):
                 $email->AddAddress(post_field("email"));
                 $email->send();
                 redirect("./thanks.html","POST");
-
                 exit();
             else:
                 exit("送信できませんでした。再度ご確認ください。");
@@ -58,11 +64,11 @@ if($_SERVER['REQUEST_METHOD']==="POST"):
 endif;
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 
 <head>
     <meta charset="utf-8">
-    <title>Page Title</title>
+    <title>サンプル請求フォーム</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/fonts.css">
@@ -110,7 +116,7 @@ endif;
                         <span class="red">※</span>の表示がある項目につきましては必ず入力くださいますよう、お願いいたします。
                     </div>
                     <div class="form-content">
-                        <form method="POST" action="./request-form.html">
+                        <form method="POST" action="./sample-form">
                             <table>
                                 <tr>
                                     <th>ご担当者様名<span class="red">※</span></th>
@@ -208,9 +214,7 @@ endif;
                     <h2 class="title">お電話でのお問い合わせ</h2>
                     <div class="inquiry-content clearfix">
                         <div class="inquiry-column left">
-                            <div class="icon-phone">
                                 <img src="./assets/images/phone-large.png">
-                            </div>
                             <div class="tel-fax">
                                 <div><span>TEL </span><a href="tel:0568281105">0568-28-1105</a></div>
                                 <div><span>FAX </span>0568-28-6462</div>

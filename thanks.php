@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Page Title</title>
+    <title>サンプル請求フォーム送信完了</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/fonts.css">
@@ -47,30 +47,28 @@
         <section id="request-content">
             <div class="container">
                 <div class="request-form">
-                    <div class="contact-note text-center">
-                        折り返し担当よりご連絡をさせていただきます。<br class="forPC" />
-                        尚、3日経ってもご連絡がない場合、<br class="forPC" />
-                        何らかの問題でメールが届いていない可能性があります。<br />
+                    <div class="request-thanks text-center">
+                        折り返し担当よりご連絡をさせていただきます。<br>
+                        尚、3日経ってもご連絡がない場合、<br>
+                        何らかの問題でメールが届いていない可能性があります。<br>
                         大変恐縮ですが、その際は下記お電話番号までご連絡をいただけますと幸いです。
                     </div>
                 </div>
                 <div class="inquiry-by-phone">
-                        <h2 class="title">お電話でのお問い合わせ</h2>
-                        <div class="inquiry-content clearfix">
-                            <div class="inquiry-column left">
-                                <div class="icon-phone">
-                                    <img src="./assets/images/phone-large.png">
-                                </div>
-                                <div class="tel-fax">
-                                    <div><span>TEL </span><a href="tel:0568281105">0568-28-1105</a></div>
-                                    <div><span>FAX </span>0568-28-6462</div>
-                                </div>
-                            </div>
-                            <div class="inquiry-column right">
-                                【受付時間】平日8:30〜17:00<br> 土・日曜、祝日、夏季休暇や年末年始<br> などは休みをいただいております。
+                    <h2 class="title">お電話でのお問い合わせ</h2>
+                    <div class="inquiry-content clearfix">
+                        <div class="inquiry-column left">
+                            <img src="./assets/images/phone-large.png">
+                            <div class="tel-fax">
+                                <div><span>TEL </span><a href="tel:0568281105">0568-28-1105</a></div>
+                                <div><span>FAX </span>0568-28-6462</div>
                             </div>
                         </div>
+                        <div class="inquiry-column right">
+                            【受付時間】平日8:30〜17:00<br> 土・日曜、祝日、夏季休暇や年末年始<br> などは休みをいただいております。
+                        </div>
                     </div>
+                </div>
             </div>
         </section>
         <footer>
