@@ -128,7 +128,6 @@ header {
     }
 }
 
-
 /* ------------------ footer ------------------ */
 footer {
     overflow: hidden;
@@ -332,16 +331,6 @@ footer .copy_right {
     height: 52px;
 }
 
-/* @media screen and (max-width: 1200px){
-    #trouble .trouble-content .content ul li {
-        font-size: 26px;
-    }
-    #trouble .trouble-content{
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-} */
-
 @media screen and (max-width: 768px) {
     #trouble .trouble-content {
         padding: 0 !important;
@@ -486,7 +475,6 @@ footer .copy_right {
     content: "";
     background-image: url(../images/point.jpg);
     background-repeat: no-repeat;
-    /* background-size: ; */
     width: 100%;
     height: 100%;
     position: absolute;
@@ -798,7 +786,7 @@ footer .copy_right {
         top: -24px;
     }
 
-    .review-picture .picture-item{
+    .review-picture .picture-item {
         width: 100%;
     }
 
@@ -946,7 +934,6 @@ footer .copy_right {
 
     header {
         position: relative;
-        z-index: 9999;
         border-bottom: 1px solid #000;
     }
 
@@ -1179,17 +1166,21 @@ textarea.shipping-add {
     line-height: 1.5em;
     height: 47px;
 }
-.postal_code{
+
+.postal_code {
     padding-top: 12px;
 }
-.postal_code input{
+
+.postal_code input {
     width: 25%;
     display: inline-block;
 }
-.postal_code span{
+
+.postal_code span {
     font-weight: bold;
     font-size: 18px;
 }
+
 #request-content .form-content .radio-group label:before {
     content: '';
     display: block;
@@ -1351,13 +1342,15 @@ textarea.shipping-add {
     line-height: 30px;
     letter-spacing: 0.1em;
 }
-.request-form .sent-title{
+
+.request-form .sent-title {
     font-size: 26px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 40px;
 }
-.sent-title span{
+
+.sent-title span {
     letter-spacing: -6px;
     font-weight: normal;
 }
@@ -1448,13 +1441,16 @@ textarea.shipping-add {
         margin-top: 40px;
         margin-bottom: 40px;
     }
-    .request-form .sent-title{
+
+    .request-form .sent-title {
         font-size: 20px;
     }
-    .postal_code input{
+
+    .postal_code input {
         width: 35%;
     }
-    .form-content table th{
+
+    .form-content table th {
         padding-left: 10px;
     }
 }
@@ -1467,9 +1463,6 @@ textarea.shipping-add {
     font-size: 12px;
     color: #CE0000;
     line-height: 1em;
-    /* margin-top: 10px; */
-    /* margin-bottom: 10px; */
-    /* visibility: hidden; */
 }
 
 .request-form .form-content .has-error input[type="text"],

@@ -3,11 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>テイクアウトトレーバッグ</title>
+    <title>テイクアウトトレーバッグ  | 株式会社 KKI </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/style.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/fonts.css">
-    <link href="../assets/vendor/zoom-vanilla/css/zoom.css" rel="stylesheet">
+    <meta name="description" content="包材に関することは株式会社KKIお任せください。" />
+    <meta name="keywords" content="株式会社,KKI,包材" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../../assets/css/fonts.css">
+    <link href="../../assets/vendor/zoom-vanilla/css/zoom.css" rel="stylesheet">
 </head>
 
 <body>
@@ -41,8 +43,8 @@
         <section id="main">
             <div class="container">
                 <div class="main-img">
-                    <img class="pc" src="../assets/images/main-1.jpg" alt="">
-                    <img class="sp" src="../assets/images/sp/main-1.jpg" alt="">
+                    <img class="pc" src="../../assets/images/main-1.jpg" alt="">
+                    <img class="sp" src="../../assets/images/sp/main-1.jpg" alt="">
                 </div>
             </div>
         </section>
@@ -84,14 +86,14 @@
                 <div class="solve">
                     <h2 class="title"><span class="color-1 tl-1">テイクアウト<br class="sp-t" />トレーバッグ</span>が<br>解決します！</h2>
                     <div class="content">
-                        <img src="../assets/images/totb_point.png">
+                        <img src="../../assets/images/totb_point.png">
                     </div>
                 </div>
                 <div class="step2">
                     <h2 class="title"><span class="tl">使い方カンタン！</span><br>
                         たったの<span class="num-2">2</span>STEP</h2>
                     <div class="content">
-                        <img src="../assets/images/totb_use.png">
+                        <img src="../../assets/images/totb_use.png">
                     </div>
                 </div>
             </div>
@@ -113,13 +115,13 @@
                         <div class="review-picture">
                             <div class="picture">
                                 <div class="picture-item">
-                                    <img src="../assets/images/sky1.jpg" alt="" data-action="zoom">
+                                    <img src="../../assets/images/sky1.jpg" alt="" data-action="zoom">
                                 </div>
                                 <div class="picture-item">
-                                    <img src="../assets/images/sky2.jpg" alt="" data-action="zoom">
+                                    <img src="../../assets/images/sky2.jpg" alt="" data-action="zoom">
                                 </div>
                                 <div class="picture-item">
-                                    <img src="../assets/images/sky3.jpg" alt="" data-action="zoom">
+                                    <img src="../../assets/images/sky3.jpg" alt="" data-action="zoom">
                                 </div>
                             </div>
                             <div class="clearfix"></div>
@@ -158,8 +160,8 @@
                     <h2 class="title"><span class="color-1">テイクアウトトレーバッグ</span>を<br class="sp-t" />使うことで<br><span
                             class="tl">作業時間を削減！</span></h2>
                     <div class="content">
-                        <img class="pc" src="../assets/images/totb_work.png" alt="">
-                        <img class="sp" src="../assets/images/sp/totb_work.png" alt="">
+                        <img class="pc" src="../../assets/images/totb_work.png" alt="">
+                        <img class="sp" src="../../assets/images/sp/totb_work.png" alt="">
                     </div>
                 </div>
             </div>
@@ -172,16 +174,16 @@
                             <p>まずはお気軽にお問い合わせください。</p>
                             <a class="btn-contact" href="http://www.v-kki.co.jp/contact/" target="_blank">
                                 <span>お問い合わせ</span>
-                                <img src="../assets/images/mail.png" />
+                                <img src="../../assets/images/mail.png" />
                             </a>
                         </div>
                         <div class="contact-tel">
-                            <img src="../assets/images/phone.png" />
+                            <img src="../../assets/images/phone.png" />
                             <span>TEL </span><a href="tel:0568281105">0568-28-1105</a>　<span>FAX 0568-28-6462</span>
                         </div>
                     </div>
                     <div class="contact-column right">
-                        <a href="http://kki-webshop.com" target="_blank"><img src="../assets/images/bannercontact.jpg"
+                        <a href="http://kki-webshop.com" target="_blank"><img src="../../assets/images/bannercontact.jpg"
                                 width="390" />
                         </a>
                     </div>
@@ -189,7 +191,7 @@
             </div>
         </section>
         <div id="sample-link">
-            <a href="../sample-form?r=p01"><img src="../assets/images/sample_link.png" alt=""></a>
+            <a href="/sample-form/?r=p02"><img src="../../assets/images/sample_link.png" alt=""></a>
         </div>
         <footer>
             <div class="container">
@@ -209,9 +211,9 @@
             </div>
         </footer>
     </div>
-    <script src="../assets/js/jquery-3.4.1.min.js"></script>
-    <script src="../assets/vendor/zoom-vanilla/js/zoom-vanilla.js"></script>
-    <script src="../assets/js/script.js"></script>
+    <script src="../../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="../../assets/vendor/zoom-vanilla/js/zoom-vanilla.js"></script>
+    <script src="../../assets/js/script.js"></script>
 </body>
 
 </html>

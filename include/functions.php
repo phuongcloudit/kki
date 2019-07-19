@@ -31,18 +31,6 @@
 		endif;
 	}
 
-	// function get_error4($field){
-	// 	if($_SERVER['REQUEST_METHOD'] !=="POST") return false;
-	// 	$error = false;
-	// 	if ((!$field=="code-a"))
-	// 	$error = "必須項目です。入力してください。";
-	// 	if($error !== false):
-	// 		echo "<div class='error'>";
-	// 		echo $error;
-	// 		echo "</div>";
-	// 	endif;
-	// }
-
 	function field($field){
 		return isset($_POST[$field])?$_POST[$field]:null;
 	}

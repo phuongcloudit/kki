@@ -1,70 +1,12 @@
-<?php 
-    require_once dirname( __FILE__ ) . '/include/functions.php'; 
-    $page_name = "confirm";
-
-$admin_email = "murase@icon-corp.jp";
-$from_name = "KKI";
-$from_email = "no-reply@hardy.jp";
-
-$confirm = false;
-if($_SERVER['REQUEST_METHOD']==="POST"):
-        $fields = array(
-            "name"		=>	"お名前",
-            "furigana"	=>	"フリガナ",
-            "company_name"	=>	"施設名・会社名・団体名",
-            "position"	=>	"職種",
-            "address"	=>	"ご住所",
-            "phone"		=>	"電話番号",
-            "email"		=>	"メールアドレス",
-            "document"	=>	"資料の送付",
-            "content"	=>	"内容",
-        );
-        $requireds = array("name","furigana","company_name","position","address","phone","email","document");
-        $confirm = true;
-        foreach ($requireds as $key => $required):
-            if(form_error($required)): $confirm = false; break; endif;
-        endforeach;
-        if($confirm==true && field("send_mail")==="send"):
-
-            $subject = "【ハーディー】お客様よりお問い合わせがありました。";
-            $body 	=	email_template("contact_admin.txt");
-            foreach ($requireds as $field) $body  =  compile($body,$field,post_field($field));
-
-            $email = new PHPMailer();
-            $email->CharSet 		=	'UTF-8';
-            $email->SetFrom($from_email, $from_name);
-            $email->Subject   = $subject;
-            $email->Body      = $body;
-            $email->AddAddress( $admin_email);
-
-            if($email->send()):
-                $subject = "【ハーディー】お問い合わせありがとうございました。";
-                $body 	=	email_template("contact_admin.txt");
-                foreach ($requireds as $field) $body  =  compile($body,$field,post_field($field));
-
-                $email = new PHPMailer();
-                $email->CharSet 		=	'UTF-8';
-                $email->SetFrom($from_email, $from_name);
-                $email->Subject   = $subject;
-                $email->Body      = $body;
-                $email->AddAddress(post_field("email"));
-                $email->send();
-                redirect("./thanks.html","POST");
-
-                exit();
-            else:
-                exit("送信できませんでした。再度ご確認ください。");
-            endif;
-        endif;
-endif;
-?>
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8">
-    <title>Page Title</title>
+    <title>サンプル請求フォーム送信完了 | 株式会社 KKI </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="description" content="包材に関することは株式会社KKIお任せください。" />
+    <meta name="keywords" content="株式会社,KKI,包材" />
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/fonts.css">
 </head>
@@ -107,17 +49,14 @@ endif;
         <section id="request-content">
             <div class="container">
                 <div class="request-form">
-                    <div class="form-notice">
-                        <span class="red">※</span>の表示がある項目につきましては必ず入力くださいますよう、お願いいたします。
+                    <div class="sent-title">
+                  <span>--------</span> 送信完了致しました <span>--------</span>
                     </div>
-                    <div class="form-content">
-                        <?php 
-									if(!$confirm):
-										require_once("include/request-form.php");
-									else:
-										require_once("include/contact-confirm.php");
-									endif;
-						?>
+                    <div class="request-thanks text-center">
+                        折り返し担当よりご連絡をさせていただきます。<br>
+                        尚、3日経ってもご連絡がない場合、<br>
+                        何らかの問題でメールが届いていない可能性があります。<br>
+                        大変恐縮ですが、その際は下記お電話番号までご連絡をいただけますと幸いです。
                     </div>
                 </div>
                 <div class="inquiry-by-phone">

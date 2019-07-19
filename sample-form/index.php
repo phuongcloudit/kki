@@ -1,5 +1,5 @@
 <?php 
-    require_once dirname( __FILE__ ) . '/include/functions.php'; 
+    require_once dirname( __FILE__ ) . '../../include/functions.php'; 
     $page_name = "request-form";
     $admin_email_1 = "taizo_shinoda@v-kki.co.jp";
     $admin_email_2 = "shin_takahara@v-kki.co.jp";
@@ -55,7 +55,7 @@ if($_SERVER['REQUEST_METHOD']==="POST"):
                 $email->Body      = $body;
                 $email->AddAddress(post_field("email"));
                 $email->send();
-                redirect("./thanks.html","POST");
+                redirect("../thanks.html","POST");
                 exit();
             else:
                 exit("送信できませんでした。再度ご確認ください。");
@@ -68,10 +68,12 @@ endif;
 
 <head>
     <meta charset="utf-8">
-    <title>サンプル請求フォーム</title>
+    <title>サンプル請求フォーム  | 株式会社 KKI </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/fonts.css">
+    <meta name="description" content="包材に関することは株式会社KKIお任せください。" />
+    <meta name="keywords" content="株式会社,KKI,包材" />
+    <link rel="stylesheet" type="text/css" media="screen" href=".../../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href=".../../assets/css/fonts.css">
 </head>
 
 <body>
@@ -116,7 +118,7 @@ endif;
                         <span class="red">※</span>の表示がある項目につきましては必ず入力くださいますよう、お願いいたします。
                     </div>
                     <div class="form-content">
-                        <form method="POST" action="./sample-form">
+                        <form method="POST" >
                             <table>
                                 <tr>
                                     <th>ご担当者様名<span class="red">※</span></th>
@@ -151,10 +153,12 @@ endif;
                                     <th>お届け先住所<span class="red">※</span></th>
                                     <td class="<?php has_error("code-a");?>">
                                         <div class="postal_code">
-                                        <span>〒</span>
-                                            <input type="text" name="code-a" placeholder="" value="<?php get_field("code-a");?>">
-                                                <span>-</span>
-                                            <input type="text" name="code-b" placeholder="" value="<?php get_field("code-b");?>">
+                                            <span>〒</span>
+                                            <input type="text" name="code-a" placeholder=""
+                                                value="<?php get_field("code-a");?>">
+                                            <span>-</span>
+                                            <input type="text" name="code-b" placeholder=""
+                                                value="<?php get_field("code-b");?>">
                                             <?php get_error("code-a");?>
                                         </div>
                                         <textarea class="shipping-add" name="address"
@@ -221,7 +225,7 @@ endif;
                     <h2 class="title">お電話でのお問い合わせ</h2>
                     <div class="inquiry-content clearfix">
                         <div class="inquiry-column left">
-                            <img src="./assets/images/phone-large.png">
+                            <img src=".../../assets/images/phone-large.png">
                             <div class="tel-fax">
                                 <div><span>TEL </span><a href="tel:0568281105">0568-28-1105</a></div>
                                 <div><span>FAX </span>0568-28-6462</div>
@@ -253,8 +257,8 @@ endif;
         </footer>
     </div>
 
-    <script src="./assets/js/jquery-3.4.1.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <script src=".../../assets/js/jquery-3.4.1.min.js"></script>
+    <script src=".../../assets/js/script.js"></script>
 </body>
 
 </html>

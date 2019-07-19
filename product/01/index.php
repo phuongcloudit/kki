@@ -3,11 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>超速トレーバッグ</title>
+    <title>超速トレーバッグ   | 株式会社 KKI </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/style.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/fonts.css">
-    <link href="../assets/vendor/zoom-vanilla/css/zoom.css" rel="stylesheet">
+    <meta name="description" content="包材に関することは株式会社KKIお任せください。" />
+    <meta name="keywords" content="株式会社,KKI,包材" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../../assets/css/fonts.css">
+    <link href="../../assets/vendor/zoom-vanilla/css/zoom.css" rel="stylesheet">
 </head>
 
 <body>
@@ -41,8 +43,8 @@
         <section id="main">
             <div class="container">
                 <div class="main-img">
-                    <img class="pc" src="../assets/images/main-2.jpg" alt="">
-                    <img class="sp" src="../assets/images/sp/main-2.jpg" alt="">
+                    <img class="pc" src="../../assets/images/main-2.jpg" alt="">
+                    <img class="sp" src="../../assets/images/sp/main-2.jpg" alt="">
                 </div>
             </div>
         </section>
@@ -83,14 +85,14 @@
                 <div class="solve">
                     <h2 class="title"><span class="color-3 tl-1">超速トレーバッグ</span>が<br>解決します！</h2>
                     <div class="content">
-                        <img src="../assets/images/tyousoku_point.png" alt="">
+                        <img src="../../assets/images/tyousoku_point.png" alt="">
                     </div>
                 </div>
                 <div class="step2">
                     <h2 class="title"><span class="tl">使い方カンタン！</span><br>
                         たったの<span class="num-3">3</span>STEP</h2>
                     <div class="content">
-                        <img src="../assets/images/tyousoku_use.png" alt="">
+                        <img src="../../assets/images/tyousoku_use.png" alt="">
                     </div>
                 </div>
             </div>
@@ -105,7 +107,7 @@
                         </div>
                         <div class="col-img clearfix">
                             <div class="col-rev left">
-                                <img src="../assets/images/kawaba.jpg" alt="">
+                                <img src="../../assets/images/kawaba.jpg" alt="">
                             </div>
                             <div class="col-rev right">
                                 2017年春から、群馬県は川場村の田園プラザ川場様ベーカリー店にてご使用いただいております。「レジ待ちで30分以上並ぶお客様の姿を見るのが心苦しい」というスタッフの方々の思いに応えるべく、1年以上の歳月をかけて試行錯誤を繰り返し、「1秒でも速い包装システムの構築」を目指して誕生しました。
@@ -114,13 +116,13 @@
                         <div class="review-picture">
                             <div class="picture">
                                 <div class="picture-item">
-                                    <img src="../assets/images/kawaba2.jpg" alt="" data-action="zoom">
+                                    <img src="../../assets/images/kawaba2.jpg" alt="" data-action="zoom">
                                 </div>
                                 <div class="picture-item">
-                                    <img src="../assets/images/kawaba3.jpg" alt="" data-action="zoom">
+                                    <img src="../../assets/images/kawaba3.jpg" alt="" data-action="zoom">
                                 </div>
                                 <div class="picture-item">
-                                    <img src="../assets/images/kawaba4.jpg" alt="" data-action="zoom">
+                                    <img src="../../assets/images/kawaba4.jpg" alt="" data-action="zoom">
                                 </div>
                             </div>
                             <div class="clearfix"></div>
@@ -150,7 +152,7 @@
                     <h2 class="title"><span class="tl-1 color-3">超速トレー・超速ホルダー</span>を<br><span
                             class="tl">利便性バツグン！</span></h2>
                     <div class="content">
-                        <img src="../assets/images/tyousoku_work.png" alt="">
+                        <img src="../../assets/images/tyousoku_work.png" alt="">
                     </div>
                 </div>
             </div>
@@ -163,16 +165,16 @@
                             <p>まずはお気軽にお問い合わせください。</p>
                             <a class="btn-contact" href="http://www.v-kki.co.jp/contact/" target="_blank">
                                 <span>お問い合わせ</span>
-                                <img src="../assets/images/mail.png" />
+                                <img src="../../assets/images/mail.png" />
                             </a>
                         </div>
                         <div class="contact-tel">
-                            <img src="../assets/images/phone.png" />
+                            <img src="../../assets/images/phone.png" />
                             <span>TEL </span><a href="tel:0568281105">0568-28-1105</a>　<span>FAX 0568-28-6462</span>
                         </div>
                     </div>
                     <div class="contact-column right">
-                        <a href="http://kki-webshop.com" target="_blank"><img src="../assets/images/bannercontact.jpg"
+                        <a href="http://kki-webshop.com" target="_blank"><img src="../../assets/images/bannercontact.jpg"
                                 width="390" />
                         </a>
                     </div>
@@ -180,7 +182,7 @@
             </div>
         </section>
         <div id="sample-link">
-            <a href="../sample-form?r=p01"><img src="../assets/images/sample_link.png" alt=""></a>
+            <a href="/sample-form/?r=p01"><img src="../../assets/images/sample_link.png" alt=""></a>
         </div>
         <footer>
             <div class="container">
@@ -201,9 +203,9 @@
         </footer>
     </div>
 
-    <script src="../assets/js/jquery-3.4.1.min.js"></script>
-    <script src="../assets/vendor/zoom-vanilla/js/zoom-vanilla.js"></script>
-    <script src="../assets/js/script.js"></script>
+    <script src="../../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="../../assets/vendor/zoom-vanilla/js/zoom-vanilla.js"></script>
+    <script src="../../assets/js/script.js"></script>
 </body>
 
 </html>
