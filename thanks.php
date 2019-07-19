@@ -47,6 +47,9 @@
         <section id="request-content">
             <div class="container">
                 <div class="request-form">
+                    <div class="sent-title">
+                  <span>--------</span> 送信完了致しました <span>--------</span>
+                    </div>
                     <div class="request-thanks text-center">
                         折り返し担当よりご連絡をさせていただきます。<br>
                         尚、3日経ってもご連絡がない場合、<br>

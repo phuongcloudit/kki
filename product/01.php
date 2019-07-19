@@ -47,8 +47,8 @@
             </div>
         </section>
         <section id="video-intro">
-            <h2 class="title">KKI の <span class="color-3">テイクアウト<br class="sp-t" />トレーバッグ</span>なら<span
-                    class="tl-2"><span class="color-2">人手不足</span>も怖くない！</span></h2>
+            <h2 class="title">KKI の <span class="color-3">超速トレーバッグ</span>なら<span class="tl-2"><span
+                        class="color-2">レジ待ち渋滞</span>も怖くない！</span></h2>
             <div class="video">
                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-1tXt_7J220?controls=0"
                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -81,7 +81,7 @@
             </div>
             <div class="container">
                 <div class="solve">
-                    <h2 class="title"><span class="color-3 tl-1">テイクアウト<br class="sp-t" />トレーバッグ</span>が<br>解決します！</h2>
+                    <h2 class="title"><span class="color-3 tl-1">超速トレーバッグ</span>が<br>解決します！</h2>
                     <div class="content">
                         <img src="../assets/images/tyousoku_point.png" alt="">
                     </div>
@@ -113,9 +113,15 @@
                         </div>
                         <div class="review-picture">
                             <div class="picture">
-                                <img src="../assets/images/kawaba2.jpg" alt="" data-action="zoom">
-                                <img src="../assets/images/kawaba3.jpg" alt="" data-action="zoom">
-                                <img src="../assets/images/kawaba4.jpg" alt="" data-action="zoom">
+                                <div class="picture-item">
+                                    <img src="../assets/images/kawaba2.jpg" alt="" data-action="zoom">
+                                </div>
+                                <div class="picture-item">
+                                    <img src="../assets/images/kawaba3.jpg" alt="" data-action="zoom">
+                                </div>
+                                <div class="picture-item">
+                                    <img src="../assets/images/kawaba4.jpg" alt="" data-action="zoom">
+                                </div>
                             </div>
                             <div class="clearfix"></div>
                         </div>
@@ -141,8 +147,8 @@
         <section id="chart">
             <div class="container">
                 <div class="chart-content">
-                    <h2 class="title"><span class="tl-1 color-3">テイクアウトトレーバッグ</span>を<br class="sp-t" />使うことで<br><span
-                            class="tl">作業時間を削減！</span></h2>
+                    <h2 class="title"><span class="tl-1 color-3">超速トレー・超速ホルダー</span>を<br><span
+                            class="tl">利便性バツグン！</span></h2>
                     <div class="content">
                         <img src="../assets/images/tyousoku_work.png" alt="">
                     </div>
@@ -173,8 +179,8 @@
                 </div>
             </div>
         </section>
-        <div id="cart">
-            <a href="../sample-form?r=p01"><img src="../assets/images/cart.png" alt=""></a>
+        <div id="sample-link">
+            <a href="../sample-form?r=p01"><img src="../assets/images/sample_link.png" alt=""></a>
         </div>
         <footer>
             <div class="container">

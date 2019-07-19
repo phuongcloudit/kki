@@ -51,7 +51,7 @@
                     class="tl-2"><span class="color-2">人手不足</span>も怖くない！</span>
             </h2>
             <div class="video">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-1tXt_7J220?controls=0"
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/SBrA2AyTsZs?controls=0"
                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
@@ -102,25 +102,35 @@
                     <h2 class="title">実際に使われている<br><span class="tl">お客様の声</span>をご紹介します！</h2>
                     <div class="content">
                         <div class="title">
-                            <p>SKY PROVENCE BAkery&Cafe 様</p>
+                            <p>SKY PROVENCE Bakery&Cafe 様</p>
                         </div>
                         <div class="video">
                             <iframe width="100%" height="100%"
-                                src="https://www.youtube.com/embed/-1tXt_7J220?controls=0" frameborder="0"
+                                src="https://www.youtube.com/embed/8sI4G-vpjGY?controls=0" frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
                         </div>
                         <div class="review-picture">
                             <div class="picture">
-                                <img src="../assets/images/sky1.jpg" alt="" data-action="zoom">
-                                <img src="../assets/images/sky2.jpg" alt="" data-action="zoom">
-                                <img src="../assets/images/sky3.jpg" alt="" data-action="zoom">
+                                <div class="picture-item">
+                                    <img src="../assets/images/sky1.jpg" alt="" data-action="zoom">
+                                </div>
+                                <div class="picture-item">
+                                    <img src="../assets/images/sky2.jpg" alt="" data-action="zoom">
+                                </div>
+                                <div class="picture-item">
+                                    <img src="../assets/images/sky3.jpg" alt="" data-action="zoom">
+                                </div>
                             </div>
                             <div class="clearfix"></div>
                             <div class="rev-content">
-                                2017 年春から、群馬県は川場村の田園プラザ川場様ベーカリー店にてご使用いただいております。 「レジ待ちで 30
-                                分以上並ぶお客様の姿を見るのが心苦しい」というスタッフの方々の思いに応えるべく、 1 年以上の歳月をかけて
-                                試行錯誤を繰り返し、 「1 秒でも速い包装システムの構築」を目指して誕生しました。
+                                2018年10月から東京都は荒川区町屋のスカイプロヴァンス様にてご使用いただいております。<br>
+                                Q.テイクアウトトレーバッグを使用してみた感想<br>
+                                ご購入したお客様はご友人に贈られたり、営業の取引先にお土産として使ってもらうなど贈答用にも
+                                人気で、見た目も可愛く商品を周知してもらえるので「袋自体が一人歩きするような商品力がある」<br>
+                                Q.導入を検討している方に向けて<br>
+                                導入する際に費用について迷ったが、使用してみて費用対効果は良いと実感した。スピードが早くて
+                                土曜日はもちろん一番忙しいお昼や夕方など「ピークタイムの困ったときこそ力を発揮できる商品」
                             </div>
                         </div>
                     </div>
@@ -178,8 +188,8 @@
                 </div>
             </div>
         </section>
-        <div id="cart">
-            <a href="../sample-form?r=p02"><img src="../assets/images/cart.png" alt=""></a>
+        <div id="sample-link">
+            <a href="../sample-form?r=p01"><img src="../assets/images/sample_link.png" alt=""></a>
         </div>
         <footer>
             <div class="container">

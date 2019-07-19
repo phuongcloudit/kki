@@ -21,8 +21,8 @@ if($_SERVER['REQUEST_METHOD']==="POST"):
             "document"	=>	"資料の送付",
             "content"	=>	"内容",
         );
-        $requireds = array("name","furigana","company_name","position","address","phone","email","document");
-        $all_fields = array("name","furigana","company_name","position","address","phone","email","document","content");
+        $requireds = array("name","furigana","company_name","position","code-a","code-b","address","phone","email","document");
+        $all_fields = array("name","furigana","company_name","position","code-a","code-b","address","phone","email","document","content");
         $confirm = true;
         foreach ($requireds as $key => $required):
             if(form_error($required)): $confirm = false; break; endif;
@@ -35,7 +35,7 @@ if($_SERVER['REQUEST_METHOD']==="POST"):
 
             $email = new PHPMailer();
             $email->CharSet 		=	'UTF-8';
-            $email->SetFrom($from_email, $from_name);
+            $email->SetFrom($from_email, post_field(name));
             $email->Subject   = $subject;
             $email->Body      = $body;
             $email->AddAddress( $admin_email_1);
@@ -44,7 +44,7 @@ if($_SERVER['REQUEST_METHOD']==="POST"):
             $email->AddAddress( $admin_email_4);
 
             if($email->send()):
-                $subject = "【株式会社KKI】お客様よりお問い合わせがありました。";
+                $subject = "【株式会社KKI】無料サンプル請求ありがとうございました。";
                 $body 	=	email_template("contact_customer.txt");
                 foreach ($all_fields as $field) $body  =  compile($body,$field,post_field($field));
 
@@ -149,7 +149,14 @@ endif;
                                 </tr>
                                 <tr>
                                     <th>お届け先住所<span class="red">※</span></th>
-                                    <td class="<?php has_error("address");?>">
+                                    <td class="<?php has_error("code-a");?>">
+                                        <div class="postal_code">
+                                        <span>〒</span>
+                                            <input type="text" name="code-a" placeholder="" value="<?php get_field("code-a");?>">
+                                                <span>-</span>
+                                            <input type="text" name="code-b" placeholder="" value="<?php get_field("code-b");?>">
+                                            <?php get_error("code-a");?>
+                                        </div>
                                         <textarea class="shipping-add" name="address"
                                             placeholder=""><?php get_field("address");?></textarea>
                                         <?php get_error("address");?>
@@ -202,7 +209,7 @@ endif;
                                 </div>
                             </div>
                             <div class="form-action">
-                            <input type="hidden" name="send_mail" value="send" />
+                                <input type="hidden" name="send_mail" value="send" />
                                 <button class="btn btn-primary" type="submit">
                                     送 信
                                 </button>
@@ -214,7 +221,7 @@ endif;
                     <h2 class="title">お電話でのお問い合わせ</h2>
                     <div class="inquiry-content clearfix">
                         <div class="inquiry-column left">
-                                <img src="./assets/images/phone-large.png">
+                            <img src="./assets/images/phone-large.png">
                             <div class="tel-fax">
                                 <div><span>TEL </span><a href="tel:0568281105">0568-28-1105</a></div>
                                 <div><span>FAX </span>0568-28-6462</div>

@@ -166,16 +166,19 @@ footer .copy_right {
     margin-top: 28px;
     float: left;
 }
+
 @media screen and (max-width: 768px) {
-    footer .copy_right{
+    footer .copy_right {
         float: none;
         text-align: center;
         margin-top: 0;
     }
-    #info_footer{
+
+    #info_footer {
         float: none;
     }
-    #logo_footer{
+
+    #logo_footer {
         padding-right: 0;
     }
 }
@@ -643,6 +646,7 @@ footer .copy_right {
     font-size: 22px;
     letter-spacing: 5px;
     width: 270px;
+    height: auto;
     margin: 0 auto;
 }
 
@@ -672,6 +676,12 @@ footer .copy_right {
 
 .contact-column.right {
     padding-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .box-contact a.btn-contact {
+        width: 250px;
+    }
 }
 
 /* ------------------ review ------------------ */
@@ -728,27 +738,27 @@ footer .copy_right {
     display: block;
 }
 
-.review-picture img {
-    float: left;
+.review-picture .picture-item {
     width: 32%;
-
+    height: auto;
 }
 
 .review-picture {
     margin-top: 20px;
-
 }
 
 .review-picture .picture {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 
 .review-picture .rev-content {
     font-size: 18px;
     line-height: 34px;
     font-family: "KozGoPr6N Medium";
+    letter-spacing: 0.15em;
 }
 
 #review .container::after {
@@ -788,8 +798,7 @@ footer .copy_right {
         top: -24px;
     }
 
-    .review-picture img {
-        float: none;
+    .review-picture .picture-item{
         width: 100%;
     }
 
@@ -884,7 +893,9 @@ footer .copy_right {
     font-size: 100px;
 }
 
-#cart {
+#sample-link {
+    width: 120px;
+    height: auto;
     position: fixed;
     top: 40%;
     right: 0;
@@ -935,6 +946,7 @@ footer .copy_right {
 
     header {
         position: relative;
+        z-index: 9999;
         border-bottom: 1px solid #000;
     }
 
@@ -1002,8 +1014,9 @@ footer .copy_right {
     }
 
     /* ----------- */
-    #cart {
-        display: none;
+    #sample-link {
+        width: 80px;
+        height: auto;
     }
 
     .main-img img {
@@ -1142,7 +1155,7 @@ input[type="email"],
 textarea {
     font-size: 14px;
     width: 100%;
-    padding: 12px 20px;
+    padding: 12px 12px;
     box-sizing: border-box;
     background-color: #fff;
     border: 1px solid #F5F5F5;
@@ -1166,7 +1179,17 @@ textarea.shipping-add {
     line-height: 1.5em;
     height: 47px;
 }
-
+.postal_code{
+    padding-top: 12px;
+}
+.postal_code input{
+    width: 25%;
+    display: inline-block;
+}
+.postal_code span{
+    font-weight: bold;
+    font-size: 18px;
+}
 #request-content .form-content .radio-group label:before {
     content: '';
     display: block;
@@ -1328,6 +1351,16 @@ textarea.shipping-add {
     line-height: 30px;
     letter-spacing: 0.1em;
 }
+.request-form .sent-title{
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.sent-title span{
+    letter-spacing: -6px;
+    font-weight: normal;
+}
 
 @media screen and (max-width: 768px) {
     .request-note-content {
@@ -1414,6 +1447,15 @@ textarea.shipping-add {
     .inquiry-by-phone {
         margin-top: 40px;
         margin-bottom: 40px;
+    }
+    .request-form .sent-title{
+        font-size: 20px;
+    }
+    .postal_code input{
+        width: 35%;
+    }
+    .form-content table th{
+        padding-left: 10px;
     }
 }
 
